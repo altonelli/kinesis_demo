@@ -106,9 +106,9 @@ if __name__ == '__main__':
                         help='''the name of the Kinesis region to connect with [default: us-east-1]''')
     parser.add_argument('--shard_count', type=int, default=1,
                         help='''the number of shards to create in the stream, if creating [default: 1]''')
-    parser.add_argument('--partition_key', default='PyKinesisExample',
+    parser.add_argument('--partition_key', default='KinesisDemo',
                         help='''the partition key to use when communicating records to the
-                    stream [default: 'PyKinesisExample-##']''')
+                    stream [default: 'KinesisDemo-##']''')
     parser.add_argument('--poster_count', type=int, default=2,
                         help='''the number of poster threads [default: 2]''')
     parser.add_argument('--poster_time', type=int, default=30,
