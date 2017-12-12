@@ -30,7 +30,7 @@ python my_messages/poster.py kinesis-demo
 The default work time for the consumers is greater than that of the producers, so that the consumers can be started before the producers.
 ```
 python my_messages/poster.py kinesis-demo
-``` 
+```
 #### Starting the Read Consumer
 ```
 python my_messages/read_consumer.py kinesis-demo

@@ -76,6 +76,7 @@ class KinesisPoster(threading.Thread):
         return len(precs)
 
     def put_records(self, records):
+        # type: (object) -> object
         for record in records:
             json_record = json.dumps(record)
             response = self.kinesis.put_record(stream_name=self.stream_name,

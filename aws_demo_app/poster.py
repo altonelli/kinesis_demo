@@ -86,6 +86,7 @@ class KinesisPoster(threading.Thread):
                 print("-= put seqNum:", response['SequenceNumber'])
 
     def put_records(self, records):
+        # type: (object) -> object
         for record in records:
             response = kinesis.put_record(
                 stream_name=self.stream_name,
